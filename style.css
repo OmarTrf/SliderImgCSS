@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ddd;
+}
+#container{
+	width: 300px;
+	height:300px;
+    margin: auto;
+    overflow: hidden;
+}
+img{
+	width:300px;
+	height: 300px;
+}
+#container ul{
+	padding: 0;
+	list-style: none;
+	width:1600px;
+	position: relative;
+	animation: sliding 5s ease-in-out infinite;
+}
+#container ul li{
+	float: left;
+	position:relative;
+}
+#container ul li h5{
+	background: #333;
+	text-align: center;
+	padding: 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+@keyframes sliding{
+   0%{left: 0;}
+   30%{left: -300px;}
+   50%{left: -600px;}
+   70%{left: -900px;}
+   90%{left: -1200px;}
+}

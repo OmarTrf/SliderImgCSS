@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ddd;
+}
+#container{
+	
+	width: 1200px;
+	height: 500px;
+	margin: auto;
+	overflow: hidden;
+}
+img{
+	width: 1200px;
+	height: 500px;
+	opacity:0.8;
+}
+#container ul{
+	padding: 0;
+	list-style: none;
+	width:6100px;
+	position: relative;
+	animation: slid 24s ease-in-out infinite;
+	opacity: 0.9;
+}
+#container ul li{
+	float: left;
+	position: relative;
+}
+#container ul li h5{
+background: #333;
+	text-align: center;
+	padding: 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	color: white;
+	font-weight:600;
+	font-size:20px;
+}
+@keyframes slid{
+   0%{left: 0;}
+   30%{left: -1200px;}
+   50%{left: -2400px;}
+   70%{left: -3600px;}
+   90%{left: -4800px;}
+}
